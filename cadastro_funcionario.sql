@@ -1,0 +1,16 @@
+CREATE DATABASE cadastro_funcionario;
+USE cadastro_funcionario;
+
+CREATE TABLE funcionario(
+id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+nome VARCHAR(120) NOT NULL,
+funcao TEXT NOT NULL,
+departamento TEXT NOT NULL,
+dataNsc VARCHAR(30) NOT NULL,
+CargaH INT NOT NULL,
+dataAd VARCHAR(30) NOT NULL,
+salario DOUBLE(9,2) NOT NULL,
+vl_Inss DOUBLE(9,2) NOT NULL,
+plnSaude CHAR(3) NOT NULL,
+PRIMARY KEY(id)
+)ENGINE = INNODB;
